@@ -1,3 +1,4 @@
+console.log ("SCRIPT LOADED")
 function changeScene(img, title, text, buttonsHTML) {
   document.getElementById("sceneImage").src = img;
   document.getElementById("title").innerText = title;
@@ -7,7 +8,7 @@ function changeScene(img, title, text, buttonsHTML) {
 
 function inspectRoom() {
   changeScene(
-    "images/room.jpg",
+    "./room.jpg",
     "Осмотр комнаты",
     "В комнате почти ничего нет. Но старый письменный стол выглядит подозрительно.",
     `
@@ -19,7 +20,7 @@ function inspectRoom() {
 
 function examineTable() {
   changeScene(
-    "images/key.jpg",
+    "./key.jpg",
     "Найдена улика",
     "В ящике стола лежит старый ключ. На нём выгравирован номер кабинета.",
     `
@@ -30,7 +31,7 @@ function examineTable() {
 
 function goToCorridor() {
   changeScene(
-    "images/corridor.jpg",
+    "./corridor.jpg",
     "Коридор",
     "Следы ведут дальше по тёмному коридору.",
     `
@@ -41,7 +42,7 @@ function goToCorridor() {
 
 function followClue() {
   changeScene(
-    "images/office.jpg",
+    "./office.jpg",
     "Офис",
     "Ключ подходит к двери офиса. Внутри тебя ждёт разгадка.",
     `
@@ -52,7 +53,7 @@ function followClue() {
 
 function goToOffice() {
   changeScene(
-    "images/office.jpg",
+    "./office.jpg",
     "Финальная локация",
     "Ты раскрываешь дело!",
     `
@@ -63,7 +64,7 @@ function goToOffice() {
 
 function leaveRoom() {
   changeScene(
-    "images/room.jpg",
+    "./room.jpg",
     "Ты ушла",
     "Дело осталось нераскрытым...",
     `
